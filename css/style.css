@@ -223,5 +223,128 @@ ol, ul {
 }
 /* Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
-*/
+*//*
+@media only screen and (max-width: 680px)  {
+    .cases .devices li {
+        float:none;
+        margin: auto;
+        width: 50%;
+    }
+    .cases .devices li img {
+        margin-bottom: -2.5rem;
+    }
+}
+@media only screen and (max-width: 605px) {
+    .top-navigation .links li {
+        margin-left: .5rem;
+    }
+    .top-navigation .content {
+        display: inline;
+    }
+}*/
+
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {
+    /* acting like an IF statement, the media query is a set of conditions in which the containing css will be applied
+    for example the statament above says: IF the media on which this CSS is going to used is SCREEN (Mobiles, Tables, Laptops, Desktops or Projectors) and the maximum resolution of that device is 1024px, THEN apply the body color blue for all the text
+    */
+
+    .content {
+        width: 85%;
+    }
+    .introduction {
+        height: 35rem;
+    }
+}
+
+
+/*ipad potrait*/
+
+@media only screen and (max-width: 768px) {
+
+    .top-navigation .links {
+        font-size: 0.95rem;
+    }
+    .top-navigation .links li {
+        margin-left: .23rem;
+    }
+    .introduction {
+        height: 23rem;
+    }
+    .introduction h1 {
+        font-size: 2.125rem;
+        margin-top: 9.5rem;
+    }
+    .introduction h3 {
+        font-size: 1.2rem;
+    }
+    .cases {
+        padding-bottom: 3rem;
+    }
+    .cases .content {
+        margin-top: 1.875rem;
+    }
+    .cases h2 {
+        font-size: 1.7rem;
+    }
+    .cases .devices li{
+        margin-top: -2.95rem;
+    }
+    .cases .devices li img {
+        width: 90px;
+    }
+    .cases .devices h3 {
+        font-size: 1.05rem;
+        margin: -0.5rem 0px 1.875rem;
+    }
+}
+
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+
+    .top-navigation .links {
+        font-size: 0.63rem;
+    }
+    .introduction {
+        height: 14rem;
+    }
+    .introduction h1 {
+        font-size: 1.5rem;
+        margin-top: 6rem;
+    }
+    .introduction h3 {
+        font-size: 1rem;
+        margin-top: .75rem;
+    }
+    .introduction .buttons {
+        width: 8rem;
+        padding: 0.5rem;
+    }
+    .cases h2 {
+        font-size: 1.1rem;
+        margin: -.5rem auto 3rem;
+    }
+    .content {
+        width: 97.5%;
+    }
+    .cases .devices li img {
+        width: 75px;
+    }
+    .cases .devices h3 {
+        font-size: 0.8rem;
+        margin: -0.5rem 0 -1rem;
+    }
+}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {
+
+}
+
 
